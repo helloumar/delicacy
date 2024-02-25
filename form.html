@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Form Tag</title>
+    </head>
+    <body> 
+        <form action="" method="post">
+            <label>Name</label> <input type="text" name="fname"/><br/><br/>
+            <label>Password</label> <input type="password" name=""/><br/><br/>
+            <label>Gender</label> <input type="radio" name="gender" id="Male"/> <label for="Male">Male</label> <input type="radio" name="gender" id="Female"/> <label for="Female">Female</label><br/><br/>
+            <label>Hobbies</label> <input type="checkbox" name="hobby" id="Music"/> <label for="Music">Music</label> <input type="checkbox" name="hobby" id="football"/> <label for="football">Football</label><br/><br/>
+            
+            <label>Message</label> <textarea rows="10" cols="60">UMAR KHAN</textarea><br/><br/>
+            <label>Country</label>
+                             <select size="2" multiple>
+                                <option value="">pakistan</option>
+                                <option value="">india</option>
+                                <option value="">nepal</option>
+                                <option value="">china</option>
+                             </select><br/><br/>
+
+                             <label>cars</label><select>
+                                <optgroup label="Toyota">
+                                    <option>one</option>
+                                    <option>two</option>
+                                    <option>three</option>
+                                </optgroup>
+                                <optgroup label="Renault">
+                                    <option>four</option>
+                                    <option>five</option>
+                                    <option>six</option>
+                                </optgroup>
+                             </select><br/><br/>
+                             <label>cars</label><input list="car"/>
+                                  <datalist id="car">
+                                    <option value="one"></option>
+                                    <option value="two"></option>
+                                    <option value="three"></option>
+                                  </datalist><br/><br/>
+                            <label>Upload File</label> <input type="file" name=""/><br/><br/>
+                            <input type="submit" value="save"/>  
+                            <input type="Reset"/>
+        
+        </form>
+    </body>
+</html>

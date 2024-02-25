@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Basic Layout</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background: pink;
+                margin: 0;
+                padding: 0;
+            }
+            #wrapper{
+                border: 0px solid black;
+                background: white;
+                margin: 0 auto;
+                width: 1000px;
+            }
+            #header{
+                height: 100px;
+                background: red;
+            }
+            #menu{
+                background: pink;
+            }
+            #menu ul{
+                margin: 0;
+                padding: 0;
+            }
+            #menu li{
+                 display: inline-block;
+            }
+            #menu li a:hover{
+                background: red;
+                color: white;
+            }
+            #menu li a{
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+            }
+            #content{
+                width:800px;
+                background: wheat;
+                min-height: 500px;
+                float: left;
+            }
+            #sideber{
+                width: 200px;
+                background: lightblue;
+                min-height: 500px;
+                float: right;
+            }
+            #sideber li a{
+                text-decoration: none;
+            }
+            #footer{
+                background: lawngreen;
+                clear: both;
+                text-align: right;
+                padding: 10px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <h1>UMAR KHAN</h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Gellery</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <h1>Basic Layout</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis nulla nec laoreet consectetur. Aliquam nec blandit elit. Aliquam sed sapien nisl. Quisque tristique porttitor turpis quis vestibulum. Morbi tempor tortor eu imperdiet pharetra. Duis dignissim tempus cursus. Fusce sapien turpis, fermentum vitae iaculis sed, porta in risus</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis nulla nec laoreet consectetur. Aliquam nec blandit elit. Aliquam sed sapien nisl. Quisque tristique porttitor turpis quis vestibulum. Morbi tempor tortor eu imperdiet pharetra. Duis dignissim tempus cursus. Fusce sapien turpis, fermentum vitae iaculis sed, porta in risus</p>
+
+            </div>
+            <div id="sideber">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Gellery</a></li>
+                    <li><a href="">Contact Us</a></li> 
+                </ul>
+            </div>
+
+            <div id="footer">
+                @copyright 2018
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Hover Effect</title>
+        <style>
+            h1{
+                text-align: center;
+                margin-top: 10px;
+            }
+            .box{
+                width: 400px;
+                height: 400px;
+                
+                margin: 0 auto;
+                position: relative;
+            
+            }
+            
+            .box .box-pic{
+                transform-origin: 95% 50% 0;
+                transition: all 0.5s;
+                position: relative;
+                z-index: 1;
+            }
+            .box .box-pic:after{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 95%;
+                width: 8px;
+                height: 8px;
+                background: black;
+                border-radius: 50%;
+            }
+            .box .box-pic img{
+                 border-radius: 50%;
+                 width: 100%;
+                height: 100%;
+            }
+            .box:hover .box-pic{
+                transform: rotate(-140deg);
+                
+            }
+            .box .content{
+                text-align: center;
+                color: beige;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: red;
+                border-radius: 50%;
+                padding: 70px 20px;
+                box-sizing: border-box;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1><span>Umar afridi</span><br/>Rotating card</h1>
+        <div class="box">
+            <div class="box-pic">
+                <img src="./Desktop/image/img.jpg" alt=""/>
+            </div>
+            <div class="content">
+                <h3>Web designer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed ea esse minima id vel?</p>
+            </div>
+        </div>
+    </body>
+</html>
